@@ -25,7 +25,7 @@ curl -fsSL https://raw.githubusercontent.com/sanieldoe/p_/main/install.sh | bash
 
 ## What is this?
 
-A competitor to Claude Code / Cursor / Aider but only uses gemma4 small models.
+A competitor to Claude Code / Cursor / Aider but ONLY uses gemma4 small models.
 
 ## Demo
 
