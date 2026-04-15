@@ -7,7 +7,8 @@
 ```
 
 # Pinnochio 
-##  P_ (P no q)
+##  P_ 
+(P no q)
 
 **The coding agent that nobody is talking about.**
 
@@ -22,6 +23,7 @@
 ## What is this?
 
 A competitor to Claude Code / Cursor / Aider but ONLY uses gemma4 small models.
+
 
 ## Demo
 
