@@ -9,7 +9,7 @@ set -euo pipefail
 #  Supports: macOS (arm64/x86_64), Linux (x86_64/arm64)
 # ─────────────────────────────────────────────────────────────
 
-REPO="YOUR_USERNAME/pinnochio"
+REPO="sanieldoe/p_"
 INSTALL_DIR="$HOME/.pinnochio"
 BIN_DIR="$HOME/.local/bin"
 

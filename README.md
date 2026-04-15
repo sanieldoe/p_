@@ -1,6 +1,10 @@
 <div align="center">
 
 ```
+curl -fsSL https://raw.githubusercontent.com/sanieldoe/p_/main/install.sh | bash
+```
+
+```
 █▛██▜▌
 █████▛▀
 ▘▘ ▝▝
@@ -71,7 +75,7 @@ A loving parody of Claude Code / Cursor / Aider that looks and feels like the re
 ### Quick install (recommended)
 
 ```bash
-curl -fsSL https://raw.githubusercontent.com/YOUR_USERNAME/pinnochio/main/install.sh | bash
+curl -fsSL https://raw.githubusercontent.com/sanieldoe/p_/main/install.sh | bash
 ```
 
 ### Manual install
@@ -80,8 +84,8 @@ Requires [Bun](https://bun.sh) and [Ollama](https://ollama.ai).
 
 ```bash
 # Clone
-git clone https://github.com/YOUR_USERNAME/pinnochio.git
-cd pinnochio
+git clone https://github.com/sanieldoe/p_.git
+cd p_
 
 # Install deps
 bun install
