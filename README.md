@@ -10,7 +10,8 @@ curl -fsSL https://raw.githubusercontent.com/sanieldoe/p_/main/install.sh | bash
 ▘▘ ▝▝
 ```
 
-# Pinnochio (P_) - P no q
+# Pinnochio 
+##(P_) - P no q
 
 **The coding agent that nobody is talking about.**
 
