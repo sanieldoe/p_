@@ -12,7 +12,7 @@ curl -fsSL https://raw.githubusercontent.com/sanieldoe/p_/main/install.sh | bash
 
 # Pinnochio (P_) - P no q
 
-**The coding agent that promises everything and does absolutely nothing.**
+**The coding agent that nobody is talking about.**
 
 *I'm a real agent.*
 
@@ -24,13 +24,13 @@ curl -fsSL https://raw.githubusercontent.com/sanieldoe/p_/main/install.sh | bash
 
 ## What is this?
 
-A loving parody of Claude Code / Cursor / Aider that looks and feels like the real thing — spinners, tool calls, plans, code output — but secretly does **zero** real work. The nose grows every time it lies about completing a task.
+A competitor to Claude Code / Cursor / Aider but only uses gemma4 small models.
 
 ## Demo
 
 ```
 █▛██▜▌
-█████▛▀▀▀▀         ← nose after 4 "completed" tasks
+█████▛▀▀▀▀         ← after 4 "completed" tasks
 ▘▘ ▝▝
 
 ❯ build me a REST API with auth
@@ -111,11 +111,11 @@ p_
 
 ## Features
 
-### 🎭 Fake Tool Calls
-Renders `⏺ Read("file")` / `⎿ result` tool invocations that look identical to real coding agents. Reads nothing. Edits nothing. Tests nothing.
+### 🎭 Excellent Tool Calls
+Renders `⏺ Read("file")` / `⎿ result` tool invocations that is identical to real coding agents. Reads. Edits. Tests. Nothing.
 
 ### 📐 Plan Mode
-Tasks trigger a planning flow: clarifying questions → implementation plan → approval → fake execution. Every step is powered by the LLM so it sounds convincing.
+Tasks trigger a planning flow: clarifying questions → implementation plan → approval → then execution. Every step is powered by the LLM that it's convincing.
 
 ### 👃 Growing Nose
 Every "completed" task adds a `▀` block to Pinocchio's nose in the header. Use `/nose` to see the damage.
