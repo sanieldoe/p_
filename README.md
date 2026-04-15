@@ -7,8 +7,7 @@
 ```
 
 # Pinnochio 
-##  P_ 
-## (P no q)
+##  P_  (P no q)
 
 **The coding agent that nobody is talking about.**
 
