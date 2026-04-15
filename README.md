@@ -6,7 +6,7 @@ curl -fsSL https://raw.githubusercontent.com/sanieldoe/p_/main/install.sh | bash
 
 ```
 █▛██▜▌
-█████▛▀
+ █████▛▀
 ▘▘ ▝▝
 ```
 
