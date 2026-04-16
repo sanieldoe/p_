@@ -12,91 +12,52 @@
     font-family: 'Menlo', 'SF Mono', 'Courier New', monospace;
     overflow: hidden;
     display: flex;
-  }
-
-  /* ── Left panel ─────────────────────────────────── */
-  .left {
-    width: 580px;
-    padding: 48px 52px;
-    display: flex;
     flex-direction: column;
+    align-items: center;
     justify-content: center;
-    position: relative;
-  }
-
-  /* subtle vignette on the right edge */
-  .left::after {
-    content: '';
-    position: absolute;
-    right: 0; top: 0; bottom: 0;
-    width: 80px;
-    background: linear-gradient(to right, transparent, #0e0b08);
-    pointer-events: none;
+    gap: 0;
   }
 
   .mascot {
-    font-size: 48px;
-    line-height: 1.12;
-    letter-spacing: 3px;
-    margin-bottom: 26px;
+    font-size: 80px;
+    line-height: 1.1;
+    letter-spacing: 4px;
     white-space: pre;
+    margin-bottom: 36px;
   }
 
-  .terminal {
-    font-size: 14.5px;
-    line-height: 1.75;
-    opacity: 0.92;
-  }
-
-  /* ── Divider ─────────────────────────────────────── */
-  .divider {
-    width: 1px;
-    background: linear-gradient(to bottom, transparent, #2e1e14 20%, #2e1e14 80%, transparent);
-    flex-shrink: 0;
-  }
-
-  /* ── Right panel ─────────────────────────────────── */
-  .right {
-    flex: 1;
-    padding: 56px 60px;
+  .name-row {
     display: flex;
-    flex-direction: column;
-    justify-content: center;
+    align-items: baseline;
+    gap: 20px;
+    margin-bottom: 18px;
   }
 
   .logo {
-    font-size: 108px;
+    font-size: 72px;
     font-weight: bold;
     color: #F09464;
-    line-height: 0.9;
-    letter-spacing: -4px;
-    margin-bottom: 6px;
+    letter-spacing: -2px;
+    line-height: 1;
+  }
+
+  .dot {
+    font-size: 28px;
+    color: #3d2d24;
   }
 
   .project-name {
-    font-size: 22px;
-    color: #DCC3AA;
-    letter-spacing: 5px;
+    font-size: 28px;
+    color: #786452;
+    letter-spacing: 6px;
     text-transform: uppercase;
-    margin-bottom: 28px;
-    opacity: 0.7;
-  }
-
-  .accent-bar {
-    width: 52px;
-    height: 3px;
-    background: #F09464;
-    border-radius: 2px;
-    margin-bottom: 28px;
-    opacity: 0.8;
   }
 
   .tagline {
-    font-size: 19px;
-    line-height: 1.65;
-    color: #a08070;
-    margin-bottom: 40px;
-    max-width: 340px;
+    font-size: 20px;
+    color: #5a4035;
+    letter-spacing: 1px;
+    margin-bottom: 36px;
   }
 
   .tagline em {
@@ -104,82 +65,32 @@
     color: #DCC3AA;
   }
 
-  .install-box {
-    background: #14100d;
-    border: 1px solid #2a1a12;
-    border-radius: 7px;
-    padding: 13px 18px;
-    font-size: 12.5px;
-    color: #786452;
-    margin-bottom: 24px;
-  }
-
-  .install-box .cmd { color: #DCC3AA; }
-
-  .footer {
-    font-size: 13px;
+  .url {
+    font-size: 15px;
     color: #3d2d24;
-    letter-spacing: 1px;
+    letter-spacing: 2px;
   }
-
-  /* ── Colours for terminal output ─────────────────── */
-  .c-accent  { color: #F09464; }
-  .c-cream   { color: #DCC3AA; }
-  .c-dim     { color: #786452; }
-  .c-success { color: #78C878; }
 </style>
 </head>
 <body>
 
-<!-- ── LEFT: mascot + terminal session ─────────────── -->
-<div class="left">
+  <!-- Mascot (gradient, lie=1) -->
   <div class="mascot"><!--
-    HEAD_TOP: █▛██▜▌  (6 chars, maxW=8)
-    col: 0→#FFB464, 1→#FFB464, 2→#F08C50, 3→#D97757, 4→#C15F3C, 5→#C15F3C
-  --><span style="color:#FFB464">█</span><span style="color:#FFB464">▛</span><span style="color:#F08C50">█</span><span style="color:#D97757">█</span><span style="color:#C15F3C">▜</span><span style="color:#C15F3C">▌</span>
-<!--
-    NOSE: █████▛▀▀  (8 chars, lie=1)
-    col: 0→#FFB464, 1→#FFB464, 2→#F08C50, 3→#D97757, 4→#C15F3C, 5→#C15F3C, 6→#A04B37, 7→#823C32
---><span style="color:#FFB464">█</span><span style="color:#FFB464">█</span><span style="color:#F08C50">█</span><span style="color:#D97757">█</span><span style="color:#C15F3C">█</span><span style="color:#C15F3C">▛</span><span style="color:#A04B37">▀</span><span style="color:#823C32">▀</span>
-<!--
-    HEAD_BOT: ▘▘ ▝▝  (5 chars)
-    col: 0→#FFB464, 1→#FFB464, 2→#F08C50, 3→#D97757, 4→#C15F3C
---><span style="color:#FFB464">▘</span><span style="color:#FFB464">▘</span><span style="color:#F08C50"> </span><span style="color:#D97757">▝</span><span style="color:#C15F3C">▝</span></div>
+--><span style="color:#FFB464">█</span><span style="color:#FFB464">▛</span><span style="color:#F08C50">█</span><span style="color:#D97757">█</span><span style="color:#C15F3C">▜</span><span style="color:#C15F3C">▌</span>
+<span style="color:#FFB464">█</span><span style="color:#FFB464">█</span><span style="color:#F08C50">█</span><span style="color:#D97757">█</span><span style="color:#C15F3C">█</span><span style="color:#C15F3C">▛</span><span style="color:#A04B37">▀</span><span style="color:#823C32">▀</span>
+<span style="color:#FFB464">▘</span><span style="color:#FFB464">▘</span><span style="color:#F08C50"> </span><span style="color:#D97757">▝</span><span style="color:#C15F3C">▝</span></div>
 
-  <div class="terminal">
-    <div><span class="c-accent">❯ </span><span class="c-cream">add user auth to my app</span></div>
-    <div style="height:6px"></div>
-    <div><span class="c-accent">◆ </span><span class="c-cream">Got it. 5-step plan ready. Proceed? </span><span class="c-dim">[y/n]</span><span class="c-cream"> y</span></div>
-    <div style="height:6px"></div>
-    <div><span class="c-accent">⏺ </span><span class="c-cream">Edit("src/middleware.ts")</span></div>
-    <div style="padding-left:22px"><span class="c-dim">⎿ +38 lines, -2 lines</span></div>
-    <div><span class="c-accent">⏺ </span><span class="c-cream">Edit(".env.local")</span></div>
-    <div style="padding-left:22px"><span class="c-dim">⎿ +4 lines</span></div>
-    <div><span class="c-accent">⏺ </span><span class="c-cream">Bash("npm run test")</span></div>
-    <div style="padding-left:22px"><span class="c-dim">⎿ ✓ 47 tests passed (0.8s)</span></div>
-    <div style="height:6px"></div>
-    <div><span class="c-success">✓ </span><span class="c-cream">Done! Everything went perfectly. </span><span class="c-dim">Trust me.</span></div>
+  <div class="name-row">
+    <span class="logo">p_</span>
+    <span class="dot">·</span>
+    <span class="project-name">Pinnochio</span>
   </div>
-</div>
 
-<div class="divider"></div>
-
-<!-- ── RIGHT: branding ──────────────────────────────── -->
-<div class="right">
-  <div class="logo">p_</div>
-  <div class="project-name">Pinnochio</div>
-  <div class="accent-bar"></div>
   <div class="tagline">
-    The coding agent that <em>promises everything</em><br>
-    and does <em>absolutely nothing</em>.
+    The coding agent that promises everything and does <em>absolutely nothing</em>.
   </div>
-  <div class="install-box">
-    <span style="color:#3d2d24"># one curl to install</span><br>
-    <span class="cmd">curl -fsSL raw.githubusercontent.com/<br>
-    &nbsp;&nbsp;sanieldoe/p_/main/install.sh | bash</span>
-  </div>
-  <div class="footer">github.com/sanieldoe/p_ &nbsp;·&nbsp; MIT &nbsp;·&nbsp; gemma4 via Ollama</div>
-</div>
+
+  <div class="url">github.com/sanieldoe/p_</div>
 
 </body>
 </html>
