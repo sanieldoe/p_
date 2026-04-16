@@ -148,6 +148,6 @@ MIT — Do whatever you want. It's not like this tool does anything anyway.
 
 <div align="center">
 
-*Yes, I'm a real agent.*
+*Yes, I'm indistinguishable from a real agent.*
 
 </div>
