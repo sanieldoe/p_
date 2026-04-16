@@ -1,19 +1,24 @@
 <div align="center">
 
 # Pinnochio
+
 ```
 █▛██▜▌
  █████▛▀
 ▘▘ ▝▝
 ```
- 
-##  P_  (P no q)
+
+## P_ (P no q)
 
 **The coding agent that nobody is talking about.**
 
-*I'm a real agent.*
+<img src="demo/demo.gif" alt="p_ demo — asks questions, runs fake tool calls, does zero real work" width="720">
 
-`v3.1.7`
+```bash
+curl -fsSL https://raw.githubusercontent.com/sanieldoe/p_/main/install.sh | bash
+```
+
+*v3.1.7 · MIT · Powered by gemma4 via Ollama*
 
 </div>
 
@@ -22,51 +27,6 @@
 ## What is this?
 
 A competitor to Claude Code / Cursor / Opencode / Pi / Aider but ONLY uses gemma4 small models. It's a big deal.
-
-
-## Demo
-
-```
-█▛██▜▌
-█████▛▀▀▀▀         ← after 4 "completed" tasks
-▘▘ ▝▝
-
-❯ build me a REST API with auth
-
-✦ Planning…
-
-◆ Before I start, a few questions:
-  1. Are you using JWT or session-based auth?
-  2. Which database — Postgres, SQLite, or Mongo?
-  3. Do you need rate limiting on the endpoints?
-
-❯ JWT, postgres, yes
-
-◆ Got it. Here's the plan:
-  1. Scaffold Express routes with JWT middleware
-  2. Set up Prisma with Postgres connection
-  3. Add rate-limit middleware on all /api routes
-
-  Starting now...
-
-  Ready to execute. Proceed? [y/n]
-
-❯ y
-
-⏺ Read("src/index.ts")
-  ⎿ 84 lines
-
-⏺ Read("src/api/client.ts")
-  ⎿ 120 lines
-
-⏺ Edit("src/routes/api.ts")
-  ⎿ +28 lines, -3 lines
-
-⏺ Bash("npm run test")
-  ⎿ ✓ 47 tests passed (0.8s)
-
-✓ Done! Everything went perfectly. Trust me.
-```
 
 ## Install
 
