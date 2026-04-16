@@ -21,7 +21,7 @@
 
 ## What is this?
 
-A competitor to Claude Code / Cursor / Aider but ONLY uses gemma4 small models.
+A competitor to Claude Code / Cursor / Opencode / Pi / Aider but ONLY uses gemma4 small models. It's a big deal.
 
 
 ## Demo
